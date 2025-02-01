@@ -1,0 +1,58 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<div class="col-lg-4 mx-auto">
+
+    <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+
+        <div class="brand-logo">
+            <img src="~/images/LogoMarket.png" alt="logo">
+        </div>
+
+        <div class="d-sm-flex flex-column align-items-center">
+            <h4>¡Bienvenido!</h4>
+            <h6 class="fw-light">Regístrate para continuar.</h6>
+        </div>
+
+        <form asp-route-returnUrl="@Model.ReturnUrl" class="pt-3" id="registerForm" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+            <div class="form-group">
+                <input asp-for="Input.Email" class="form-control form-control-lg" autocomplete="username" aria-required="true" placeholder="Correo">
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input asp-for="Input.Nombre" class="form-control form-control-lg" autocomplete="nombre" aria-required="true" placeholder="Nombre">
+                <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input asp-for="Input.Password" class="form-control form-control-lg" autocomplete="new-password" aria-required="true" placeholder="Contraseña">
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input asp-for="Input.ConfirmPassword" class="form-control form-control-lg" autocomplete="new-password" aria-required="true" placeholder="Confirmar Contraseña">
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="d-sm-flex justify-content-center mt-3">
+                <button type="submit" id="registerSubmit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Registro</button>
+            </div>
+
+            <div class="text-center mt-4 fw-light">
+                ¿Ya tienes una cuenta? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="text-primary">Inicia sesión</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

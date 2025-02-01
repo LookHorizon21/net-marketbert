@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Lista de Artículos";
+}
+
+<div class="col-12 grid-margin stretch-card">
+
+    <div class="card card-rounded">
+
+        <div class="card-body">
+
+            <div class="d-sm-flex justify-content-between align-items-center">
+                <h4 class="card-title card-title-dash">Lista de Artículos</h4>
+                <a asp-action="Create" class="btn btn-primary text-white mb-0 me-0"><i class="me-2 fa-solid fa-plus"></i>Nuevo Artículo</a>
+            </div>
+
+            <div class="table-responsive mt-4">
+                <table class="table select-table" id="tblArticulos">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Imagen</th>
+                            <th>Fecha de Creación</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/articulos.js" asp-append-version="true"></script>
+}

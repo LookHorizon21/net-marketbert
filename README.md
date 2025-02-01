@@ -83,5 +83,5 @@ Si tienes alguna duda o sugerencia, puedes contactarme en **aguerowedman@gmail.c
 
 ---
 
-**Repositorio en GitHub:** [https://github.com/LookHorizon21/net-marketbert.git](https://github.com/LookHorizon21/net-marketbert.git)
+**Repositorio en GitHub:** [https://github.com/WedCode/net-marketbert.git](https://github.com/WedCode/net-marketbert.git)
 

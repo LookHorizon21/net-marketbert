@@ -2,9 +2,15 @@
 
 Este es un proyecto desarrollado con **ASP.NET Core MVC**, utilizando **Identity con Razor Pages** para la autenticación y gestión de usuarios. Se ha implementado el **Patrón de Repositorio** para una mejor separación de responsabilidades y mantenimiento del código. Además, se ha organizado la aplicación utilizando **Areas** para modularizar el proyecto.
 
-🚀 **Disponibilidad**
+### 🚀 Disponibilidad
 
 El proyecto está disponible en **GitHub** y también se ha desplegado en: **[http://devwed.tryasp.net/](http://devwed.tryasp.net/)**
+
+### 🔑 Credenciales de acceso
+
+Para autenticarse en el sistema, se pueden usar las siguientes credenciales:
+- **Usuario:** admin@gmail.com
+- **Contraseña:** Admin_123
 
 ## Tecnologías utilizadas
 
